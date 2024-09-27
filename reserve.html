@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vhotel Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-hotel"></i>Vhotel</a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="rooms.html">rooms</a>
+            <a href="facilites.html">facilities</a>
+            <a href="reserve.html">reserve</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+
+    <section class="reserve">
+        <div class="form-container">
+            <div class="form-image">
+                <img src="assets/lobby.jpg" alt="Form Image">
+            </div>
+            <div class="form-content">
+                <h2>Reservation Form</h2>
+                <form id="reservation-form" onsubmit="validateForm(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" >
+                    </div>
+                    <div class="form-group">
+                        <label for="check-in">Check-in Date</label>
+                        <input type="date" id="check-in" name="check-in">
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out">Check-out Date</label>
+                        <input type="date" id="check-out" name="check-out">
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type">Type of Room</label>
+                        <select id="room-type" name="room-type">
+                            <option value="">Select Room Type</option>
+                            <option value="standard">Single Room</option>
+                            <option value="deluxe">Double Room</option>
+                            <option value="suite">Luxurious</option>
+                        </select>
+                    </div>
+                        <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

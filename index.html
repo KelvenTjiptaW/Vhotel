@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vhotel Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-hotel"></i>Vhotel</a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="rooms.html">rooms</a>
+            <a href="facilites.html">facilities</a>
+            <a href="reserve.html">reserve</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background: url(assets/lobby2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>A Place to find comfort</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(assets/gym.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>A Place to find comfort</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(assets/restaurant.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>A Place to find comfort</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(assets/spa.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>A Place to find comfort</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(assets/kolamrenang.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>A Place to find comfort</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="banner">
+
+        <img src="assets/hotel-offers.jpg" style="height: 350px;" alt="Event Banner">
+    </section>
+    <br>
+    <br>
+    <section class="availability">
+
+        <form action="">
+
+            <div class="box">
+                <p>Check In <span>*</span></p>
+                <input type="date" class="input">
+            </div>
+
+            <div class="box">
+                <p>Check Out <span>*</span></p>
+                <input type="date" class="input">
+            </div>
+
+            <div class="box">
+                <p>Adults <span>*</span></p>
+                <select name="Adults" id="" class="input">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                    <option value="5">5 Adults</option>
+                    <option value="6">6 Adults</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>Children <span>*</span></p>
+                <select name="Adults" id="" class="input">
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Childs</option>
+                    <option value="3">3 Childs</option>
+                    <option value="4">4 Childs</option>
+                    <option value="5">5 Childs</option>
+                    <option value="6">6 Childs</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <p>Rooms <span>*</span></p>
+                <select name="Adults" id="" class="input">
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                    <option value="5">5 Rooms</option>
+                    <option value="6">6 Rooms</option>
+                </select>
+            </div>
+
+            <input type="submit" value="check availability" class="btn">
+
+        </form>
+    </section>
+    <section>
+        <div class="promotions">
+            <div class="promotion">
+                <img src="assets/hotel.jpg" alt="Promotion 1">
+                <h3>Special Promotion 1:</h3>
+                <p>Enjoy a 30% discount on all rooms during the weekend.</p>
+
+            </div>
+            <div class="promotion">
+                <img src="assets/lobby2.jpg" alt="Promotion 2">
+                <h3>Special Promotion 2:</h3>
+                <p>Stay two nights over the weekend and receive a complimentary breakfast for two.</p>
+
+            </div>
+            <div class="promotion">
+                <img src="assets/onebed1.jpg" alt="Promotion 3">
+                <h3>Special Promotion 3:</h3>
+                <p>Book now and receive a complimentary welcome drink upon arrival.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
